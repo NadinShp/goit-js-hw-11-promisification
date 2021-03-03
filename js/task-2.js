@@ -7,9 +7,9 @@ const users = [
   { name: 'Ajax', active: true },
   { name: 'Lux', active: false },
 ];
-// console.table(users);
+console.table(users);
 const toggleUserState = (allUsers, userName) => {
-    return new Promise((resolve, reject) => {
+    return new Promise(resolve => {
         setTimeout(() => {
             const updatedUsers = allUsers.map(user =>
                 user.name === userName
